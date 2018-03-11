@@ -1,4 +1,5 @@
 #!/bin/bash
+# original install instructions https://github.com/f1xpl/openauto/wiki/Build-instructions
 sudo apt-get update
 sudo apt-get install -y libboost-all-dev libusb-1.0.0-dev libssl-dev cmake libprotobuf-dev protobuf-c-compiler protobuf-compiler libqt5multimedia5 libqt5multimedia5-plugins libqt5multimediawidgets5 qtmultimedia5-dev libqt5bluetooth5 libqt5bluetooth5-bin qtconnectivity5-dev pulseaudio
 cd 
