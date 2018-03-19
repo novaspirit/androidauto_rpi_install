@@ -3,6 +3,8 @@
 ##
 # Script for Android Auto (OpenAuto) install on RPi
 # Original install instructions https://github.com/f1xpl/openauto/wiki/Build-instructions
+#
+# Compatible only with Raspbeery PI 3 or newer (Stretch)
 ##
 
 echo "> Updating repository"
@@ -21,6 +23,8 @@ mkdir aasdk_build
 cd aasdk_build
 cmake -DCMAKE_BUILD_TYPE=Release ../aasdk
 make -j4
+
+echo "> Building ilclient firmware"
 cd /opt/vc/src/hello_pi/libs/ilclient
 make -j4
 
